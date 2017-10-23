@@ -26,7 +26,7 @@ class App extends Component {
   }
 
   componentDidMount () {
-    axios.get('http://maqe.github.io/json/posts.json')
+    axios.get('https://maqe.github.io/json/posts.json')
       .then(response => {
         this.setState({
           posts: {
@@ -36,7 +36,7 @@ class App extends Component {
         })
       })
 
-    axios.get('http://maqe.github.io/json/authors.json')
+    axios.get('https://maqe.github.io/json/authors.json')
       .then(response => {
         this.setState({
           authors: {
